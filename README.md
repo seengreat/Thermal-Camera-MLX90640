@@ -19,15 +19,12 @@ That is, how many frames of data are measured per second, call the MLX90640_SetR
 
 3.It is recommended not to use too long cables to connect the module, otherwise it will easily lead to EEPROM write error and failure
 
-Module Pins-----Raspberry Pi BOARD Numbe------Function Name-----Wiring Instructions
-
-   GND-------------------6--------------------------------GND-------------------GND
-   
-   VCC--------------------1--------------------------------3.3V-------------------VCC
-   
-   SDA--------------------3--------------------------------SDA.1-----------------I2C Data
-   
-   SCL---------------------5--------------------------------SCL.1-----------------I2C Clock
+|Module Pins|Raspberry Pi BOARD Numbe|Function Name|Wiring Instructions|
+|-----------|------------------------|-------------|-------------------|
+|GND|6|GND|GND|
+|VCC|1|3.3V|VCC|
+|SDA|3|SDA.1|I2C Data|
+|SCL|5|SCL.1|I2C Clock|
    
 ## Demo Codes
 
