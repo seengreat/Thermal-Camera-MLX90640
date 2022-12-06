@@ -67,6 +67,7 @@ int main()
     img_src.fill(0);
     
     unsigned char blue[] = {0,0,255};
+    unsigned char black[] = {0,0,0};
     CImgDisplay disp(img_show,"SEENGREAT");
 
     static u_int16_t eemlx90640[832];
@@ -125,11 +126,11 @@ int main()
             
         sprintf(show_text,"Min:%d",int(minTemp));
         strcat(show_text, tem_uint);
-        img_show.draw_text(10,DISP_H-30,show_text,blue,0,1,23);
+        img_show.draw_text(10,DISP_H-30,show_text,black,0,1,23);
         
         sprintf(show_text,"Max:%d",int(maxTemp));
         strcat(show_text, tem_uint);
-        img_show.draw_text(DISP_W-120,DISP_H-30,show_text,blue,0,1,23);//
+        img_show.draw_text(DISP_W-120,DISP_H-30,show_text,black,0,1,23);//
 	
         disp.display(img_show);   		
     }
