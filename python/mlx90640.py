@@ -85,10 +85,10 @@ def Update_image():
             img_show = img_temp.resize((DISP_W,DISP_H))
             draw = ImageDraw.Draw(img_show)        
             show_text = str.format("Min:%d%s"%(int(minTemp),"°C"))
-            draw.text((10,DISP_H-30),show_text,fill=(0,0,255),font=font)# draw minimum temperature
+            draw.text((10,DISP_H-30),show_text,fill=(0,0,0),font=font)# draw minimum temperature
         
             show_text = str.format("Max:%d%s"%(int(maxTemp),"°C"))
-            draw.text((DISP_W-100,DISP_H-30),show_text,fill=(0,0,255),font=font) # draw maximum temperature
+            draw.text((DISP_W-100,DISP_H-30),show_text,fill=(0,0,0),font=font) # draw maximum temperature
             
             image_show = ImageTk.PhotoImage(img_show)
             label.configure(image = image_show)
