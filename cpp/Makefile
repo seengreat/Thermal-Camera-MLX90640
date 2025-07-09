@@ -19,7 +19,7 @@ $(obj):./%.o:./%.cpp
 
 .PHONY:clean all
 clean:
-	-rm *.o $(app)
+	-rm *.o functions/*.o $(app)
 $(info clean successful)
 
 #this file should be located in current root directory
