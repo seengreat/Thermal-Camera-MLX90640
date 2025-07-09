@@ -15,7 +15,7 @@ $(app):$(obj)
 
 #output all .o files
 $(obj):./%.o:./%.cpp	
-	$(CXX) -c $< -o $@ $(DLIBS)
+	$(CXX) -c -fPIC $< -o $@ $(DLIBS)
 
 .PHONY:clean all
 clean:
