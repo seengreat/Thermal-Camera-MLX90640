@@ -22,7 +22,7 @@ using namespace cimg_library;
 char show_text[20];
 CImg<unsigned char>img_src(24,32,1,3);
 CImg<unsigned char>img_show(DISP_W,DISP_H,1,3);
-char const tem_uint[2] = {0xb0,0x43};//"°C"
+char const tem_uint[3] = {0xb0,0x43,'\0'};//"°C"
 
 void Temp_To_RGB(int x, int y, float v) 
 {
