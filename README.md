@@ -49,7 +49,7 @@ Interfacing Options -> I2C -> Yes
 
 Modify I2C communication baud rate (recommended to be set to 500000 or above):
 
-sudo nano /boot/config.txt
+sudo nano /boot/config.txt(In bullseye system) or sudo nano /boot/firmware/config.txt(In bookworm system)
 
 dtparam=i2c1_baudrate=800000
 
